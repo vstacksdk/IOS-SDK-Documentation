@@ -284,6 +284,22 @@ Xem code mẫu tại đây: https://github.com/vstacksdk/ios-sdk-documentation/b
 ```
 Hàm này VStack SDK gọi để thông báo cuộc gọi kết thúc.
 
+```objective-c
+- (void) onCallDurationWithId: (int) callId ofVStackUserId: (NSString *) vStackUserId duration: (long) duration;
+```
+
+```objective-c
+- (void) onCallRingingWithId: (int) callId ofVStackUserId: (NSString *) vStackUserId status: (int) status;
+```
+
+```objective-c
+- (void) onCallAnswerWithId: (int) callId ofVStackUserId: (NSString *) vStackUserId status: (int) status;
+```
+
+```objective-c
+- (void) onCallEndWithId: (int) callId ofVStackUserId: (NSString *) vStackUserId status: (int) status;
+```
+
 ### 5.3. VSChatDelegate
 
 > a. Yêu cầu navigation controller
