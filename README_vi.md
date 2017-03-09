@@ -287,18 +287,22 @@ Hàm này VStack SDK gọi để thông báo cuộc gọi kết thúc.
 ```objective-c
 - (void) onCallDurationWithId: (int) callId ofVStackUserId: (NSString *) vStackUserId duration: (long) duration;
 ```
+Hàm tính thời gian của cuộc gọi khi cuộc gọi voice/video được kết thúc.
 
 ```objective-c
 - (void) onCallRingingWithId: (int) callId ofVStackUserId: (NSString *) vStackUserId status: (int) status;
 ```
+Hàm lắng nghe sự kiện đổ chuông khi cuộc gọi voice/video khi nhận được cuộc gọi.
 
 ```objective-c
 - (void) onCallAnswerWithId: (int) callId ofVStackUserId: (NSString *) vStackUserId status: (int) status;
 ```
+Hàm lắng nghe sự kiện được trả lời cuộc gọi voice/video.
 
 ```objective-c
 - (void) onCallEndWithId: (int) callId ofVStackUserId: (NSString *) vStackUserId status: (int) status;
 ```
+Hàm lắng nghe sự kiện khi kết thúc cuộc gọi trong các trường hợp như hết thời gian timeout, khi bị decline...
 
 ### 5.3. VSChatDelegate
 
