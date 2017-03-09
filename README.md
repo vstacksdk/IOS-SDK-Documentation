@@ -273,8 +273,23 @@ See sample code here: https://github.com/vstacksdk/ios-sdk-documentation/blob/ma
 ```objective-c
 - (void) vsJustFinishCall: (NSDictionary *) callInfo;
 ```
-
 This function will be called when the call is ended.
+
+```objective-c
+- (void) onCallDurationWithId: (int) callId ofVStackUserId: (NSString *) vStackUserId duration: (long) duration;
+```
+
+```objective-c
+- (void) onCallRingingWithId: (int) callId ofVStackUserId: (NSString *) vStackUserId status: (int) status;
+```
+
+```objective-c
+- (void) onCallAnswerWithId: (int) callId ofVStackUserId: (NSString *) vStackUserId status: (int) status;
+```
+
+```objective-c
+- (void) onCallEndWithId: (int) callId ofVStackUserId: (NSString *) vStackUserId status: (int) status;
+```
 
 ### 5.3. VSChatDelegate
 
