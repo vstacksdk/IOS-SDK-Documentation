@@ -245,6 +245,16 @@ Parameter:
 
 Quy trình xác thực giữa ứng dụng của bạn (VStack SDK), VStack server và server của bạn được mô tả ở bước 3.
 
+### 4.8. Ngắt kết nối khỏi VStack server
+```objective-c
+[[VStackManager instance] disconnectVSServer];
+```
+
+### 4.9. Ngắt kết nối khỏi VStack server và xóa tất cả dữ liệu đã lưu trữ trên client
+```objective-c
+[[VStackManager instance] disconnectAndClearAllData];
+```
+
 # 5. Thực hiện các hàm delegate của VStack SDK
 ### 5.1. VSUserInfoDelegate
 > a. Yêu cầu thông tin 1 số user
