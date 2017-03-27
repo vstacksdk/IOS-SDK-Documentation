@@ -236,6 +236,16 @@ Parameter:
 
 Authorization process between your application (VStack SDK), VStack server and your server is described in step 3.
 
+### 4.8. Disconnect from VStack server
+```objective-c
+[[VStackManager instance] disconnectVSServer];
+```
+
+### 4.9. Disconnect from VStack server and clear all cached data on client
+```objective-c
+[[VStackManager instance] disconnectAndClearAllData];
+```
+
 # 5. Process delegates of VStack SDK
 ### 5.1. VSUserInfoDelegate
 > a. Request information of some users
