@@ -246,6 +246,12 @@ Authorization process between your application (VStack SDK), VStack server and y
 [[VStackManager instance] disconnectAndClearAllData];
 ```
 
+### 4.10: Set time limit for calls (voice call/video call)
+```objective-c
+- (void) setLimitedTime: (long) timeLimited;
+```
+"timeLimited" has units in milliseconds.
+
 # 5. Process delegates of VStack SDK
 ### 5.1. VSUserInfoDelegate
 > a. Request information of some users
