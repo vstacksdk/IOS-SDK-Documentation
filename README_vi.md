@@ -153,6 +153,7 @@ Bước khởi tạo VStack nên được đặt ngay lúc app khởi chạy, ng
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 ```
+
 ### 4.1. Thiết lập AppID
 ```objective-c
 [[VStackManager instance] setAppId:@"YOUR_APP_ID_HERE"];
@@ -162,6 +163,7 @@ Bước khởi tạo VStack nên được đặt ngay lúc app khởi chạy, ng
 ```objective-c
 [[VStackManager instance] setPublicKey:@"YOUR_PUBLIC_KEY_HERE"];
 ```
+
 ### 4.3. Thiết lập các delegate của VStack:
 - VSUserInfoDelegate
 - VSChatDelegate
@@ -254,6 +256,12 @@ Quy trình xác thực giữa ứng dụng của bạn (VStack SDK), VStack serv
 ```objective-c
 [[VStackManager instance] disconnectAndClearAllData];
 ```
+### 4.10: Cài đặt thời gian giới hạn cuộc gọi (voice call/video call)
+```objective-c
+- (void) setLimitedTime: (long) timeLimited;
+```
+"timeLimited" có đơn vị là mili giây.
+
 
 # 5. Thực hiện các hàm delegate của VStack SDK
 ### 5.1. VSUserInfoDelegate
