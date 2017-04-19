@@ -262,6 +262,19 @@ Quy trình xác thực giữa ứng dụng của bạn (VStack SDK), VStack serv
 ```
 "timeLimited" có đơn vị là mili giây.
 
+### 4.11: Lịch sử cuộc gọi
+Khởi tạo VStackCallHistoryTableView:
+```objective-c
+VStackCallHistoryTableView *tableView = [[VStackCallHistoryTableView alloc] init];
+```
+Set delegate và datasource cho VStackCallHistoryTableView:
+```objective-c
+[tableView initDelegateAndDatasource];
+```
+Set parentController cho VStackCallHistoryTableView để pushViewController khi click vào 1 row:
+```objective-c
+tableView.parentController = self;
+```
 
 # 5. Thực hiện các hàm delegate của VStack SDK
 ### 5.1. VSUserInfoDelegate
