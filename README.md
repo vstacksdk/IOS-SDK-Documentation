@@ -252,6 +252,20 @@ Authorization process between your application (VStack SDK), VStack server and y
 ```
 "timeLimited" has units in milliseconds.
 
+### 4.11: Call history
+Init VStackCallHistoryTableView:
+```objective-c
+VStackCallHistoryTableView *tableView = [[VStackCallHistoryTableView alloc] init];
+```
+Set delegate and datasource for VStackCallHistoryTableView:
+```objective-c
+[tableView initDelegateAndDatasource];
+```
+Set parentController for VStackCallHistoryTableView to pushViewController when click on a row::
+```objective-c
+tableView.parentController = self;
+```
+
 # 5. Process delegates of VStack SDK
 ### 5.1. VSUserInfoDelegate
 > a. Request information of some users
